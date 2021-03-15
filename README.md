@@ -1,19 +1,21 @@
-# Django Music Player
-
-A music player built with django web framework
-
-
+# Простой аудиоблог
+Простой музыкальный плеер. Можно прослушивать музыку, добавлять песни, изменять громкость.
 
 ## demo 
+## Зависимости
+#### Python3.7, Django==2.2
 
+## Запуск
+Для тестового запуска необходимо выполнить следующие шаги:
+- Установить зависимости `pip install -r requirements.txt`
+- Создать миграции`python manage.py makemigrations`
+- Выполнить миграции `python manage.py migrate`
+- Запустить сервер `python manage.py runserver`
+- Создать администратора `python manage.py createsuperuser`
+- Добавить пару тегов и песен в админке
 
-## dependencies
-#### Python, Django==2.1
-
-## run 
-
-```
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
-```
+## Планируется в будующем
+- Добавить паджинацияю
+- Добавить возможность загружать песни через форму
+- Редактирование своих записей
+- Скачевание треков
